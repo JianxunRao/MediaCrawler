@@ -22,6 +22,9 @@ CRAWLER_TYPE = (
     "search"  # 爬取类型，search(关键词搜索) | detail(帖子详情)| creator(创作者主页数据)
 )
 
+# 爬取文章数量上限
+COUNT_LIMIT = 20000
+
 # 是否开启 IP 代理
 ENABLE_IP_PROXY = False
 
@@ -126,6 +129,12 @@ TIEBA_CREATOR_URL_LIST = [
     # ........................
 ]
 
+# 指定头条需要爬取的ID列表
+TOUTIAO_SPECIFIED_ID_LIST = [
+    "7446597284285989417",
+    # ........................
+]
+
 # 指定小红书创作者ID列表
 XHS_CREATOR_ID_LIST = [
     "63e36c9a000000002703502b",
@@ -154,6 +163,12 @@ KS_CREATOR_ID_LIST = [
 # 指定知乎创作者主页url列表
 ZHIHU_CREATOR_URL_LIST = [
     "https://www.zhihu.com/people/yd1234567",
+    # ........................
+]
+
+# 指定头条创作者ID列表(token)
+TOUTIAO_CREATOR_ID_LIST = [
+    "MS4wLjABAAAAjlhp9frdJMzX1sj23-gKqPXE11NMJ0HejjFa3kG44spBlt4xL6f7wZTiYW_zTXH6", # 中山大学
     # ........................
 ]
 
